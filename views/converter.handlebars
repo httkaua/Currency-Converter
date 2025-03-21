@@ -1,0 +1,66 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Currency Converter</h2>
+
+    <div class="card p-4 shadow-lg border-0">
+        <div class="row g-3">
+            <!-- Source Currency -->
+            <div class="col-md-6">
+                <div class="p-3 border rounded text-center bg-light">
+                    <label for="fromCurrency" class="form-label fw-bold">From:</label>
+                    <select id="fromCurrency" class="form-select">
+                        <option value="USD">US Dollar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="BRL">Brazilian Real (BRL)</option>
+                        <option value="JPY">Japanese Yen (JPY)</option>
+                        <option value="GBP">British Pound (GBP)</option>
+                        <option value="CAD">Canadian Dollar (CAD)</option>
+                        <option value="AUD">Australian Dollar (AUD)</option>
+                        <option value="CHF">Swiss Franc (CHF)</option>
+                        <option value="CNY">Chinese Yuan (CNY)</option>
+                        <option value="ARS">Argentine Peso (ARS)</option>
+                        <option value="MXN">Mexican Peso (MXN)</option>
+                        <option value="INR">Indian Rupee (INR)</option>
+                        <option value="KRW">South Korean Won (KRW)</option>
+                        <option value="RUB">Russian Ruble (RUB)</option>
+                        <option value="ZAR">South African Rand (ZAR)</option>
+                        <option value="TRY">Turkish Lira (TRY)</option>
+                    </select>
+
+                    <input type="number" id="amount" class="form-control mt-3" placeholder="Enter amount" min="0.01" step="0.01">
+                </div>
+            </div>
+
+            <!-- Target Currency -->
+            <div class="col-md-6">
+                <div class="p-3 border rounded text-center bg-light">
+                    <label for="toCurrency" class="form-label fw-bold">To:</label>
+                    <select id="toCurrency" class="form-select">
+                        <option value="USD">US Dollar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="BRL">Brazilian Real (BRL)</option>
+                        <option value="JPY">Japanese Yen (JPY)</option>
+                        <option value="GBP">British Pound (GBP)</option>
+                        <option value="CAD">Canadian Dollar (CAD)</option>
+                        <option value="AUD">Australian Dollar (AUD)</option>
+                        <option value="CHF">Swiss Franc (CHF)</option>
+                        <option value="CNY">Chinese Yuan (CNY)</option>
+                        <option value="ARS">Argentine Peso (ARS)</option>
+                        <option value="MXN">Mexican Peso (MXN)</option>
+                        <option value="INR">Indian Rupee (INR)</option>
+                        <option value="KRW">South Korean Won (KRW)</option>
+                        <option value="RUB">Russian Ruble (RUB)</option>
+                        <option value="ZAR">South African Rand (ZAR)</option>
+                        <option value="TRY">Turkish Lira (TRY)</option>
+                    </select>
+
+                    <div id="converted-value" class="fs-3 fw-bold text-success mt-3">0.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Convert Button -->
+        <div class="d-grid mt-4">
+            <a href="/converter-request" class="btn btn-success btn-lg">Convert</a>
+        </div>
+    </div>
+</div>
